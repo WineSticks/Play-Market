@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+      <div class="a">Hello World</div>
+      <div class="a">Hello World</div>
+      <div class="a">Hello World</div>
+      <div class="a">Hello World</div>
+      <div class="a">Hello World</div>
+
+    
+    <script>
+
+          /* console.log(document) */
+
+             const word = document.querySelectorAll(".a")
+             
+
+         word.onclick = function(){  
+         word.style.display = "none"  
+         word.style.color = "green"
+         word.style.background = "red"
+         word.className = "UZB"
+      }  
+
+     /*  word.onmouseover = function(){
+           word.style.background = "black"
+           word.style.color = "White"
+      }
+      word.onmouseout = function(){
+           word.style.background = "yellow"
+           word.style.color = "green"
+      } */
+           
+      /* setInterval(function help (){
+                 alert("Hello World")
+           }, 3000)  */  
+
+
+
+
+      window.console.log(word)
+      /* word.ondblclick =  function(){
+        word.innerHTML = "NetPro"
+      } */
+        /* var name = prompt("O`quvchining Ismini Kiriting")
+  
+            switch(name){
+                case "Aziz" : 
+                     alert("Aziz 5 bahoga O`qiydi")
+                         break
+                case "Akbar" : 
+                     alert("Akbar 2 bahoga O`qiydi")
+                          break
+                case "Kamol" : 
+                     alert("Kamol 4 bahoga O`qiydi")
+                         break
+                case "Saidakbar" : 
+                     alert("Saidakbar 2 baxoga O`qiyda")
+                         break
+                default :  alert("Tugadi")
+            }
+              */
+            /* ----------------------------- */
+            
+              /* ССЫЛОЧНЫЙ ТИП   "{oblect}"   */
+              /* const objectA = {
+                city: 10,
+                country: "Hello"
+              } 
+              const objectB = objectA
+
+              objectB.country = "World"                               
+              objectB.number = 998
+
+              console.log(objectA)  */
+            /* -------------------------- */
+
+               /* ДИНАМИЧЕСКАЯ ТИПИЗАЦИЯ */
+            /*  function a(){
+                console.log("Who are You?")
+            }           
+             a()
+             
+             a = 10
+
+             a() */
+             /* ----------------------------------- */
+
+                 /* ТОЧЕЧНАЯ ЗАПИСЬ (Dot notation) */
+                /* O`ZINI KO`RISH */
+           /*   const myCity = {
+                city: "Uzbekistan №_1",
+                popular: true,
+                country: undefined,
+             }
+             console.log(myCity.popular) */
+           /*  --------------------------------
+
+
+               /*  O`ZGARTIRISH */
+            /* const myCity = {
+                city: "New York"
+              }
+              myCity.city = "Uzbekistan"
+
+              console.log(myCity) 
+              
+            --------------------------------- */
+
+                  /* QO`SHISH */
+            /* const myCity = {
+                city: "USA"
+               }
+               myCity.popular = true
+
+               console.log(myCity)
+
+               myCity.country = 10
+               
+               console.log(myCity)  */
+             /* ------------------------------ */
+                 
+                  /* DELETE (operator) */
+              /*  const myCity = {
+                city: "Uzbekistan №_1",
+                popular: true,
+                country: undefined,
+             }
+               delete myCity.city
+
+               console.log(myCity)  */
+            /* ------------------------------- */
+                  
+                  /* BRACKET NOTATION ( [] ) */
+                /* const myCity = {
+                city: "Hello"
+              }
+              myCity["UZB"] = 777
+ 
+               let MIROLIM = "Axmedov"  
+               
+               myCity[MIROLIM] = 777
+
+               globalThis.console.log(myCity) */
+            /* ----------------------------- */
+
+                /* ВЛОЖЕННЫЕ ОБЬЕКТЫ */
+              /* const myNum = {
+                city: "Tashkent",
+                number: 998,
+                info:{
+                    name: "Mirolim",
+                    surname: 777,
+                } 
+              }
+              console.log(myNum.info.surname)
+
+              delete myNum.info.surname                   
+
+              console.log(myNum) */
+              /* ------------------------- */
+
+                   /* СОРКАЩЕННЫЙ КОД */
+                /* const name = "Mirolim"
+                 const num = 998
+
+                 const myNum = {
+                     name,
+                     num,
+                    city: "Tashkent"
+                 }
+                 console.log(myNum) */ 
+             /* ---------------------------- */
+
+                      /* МЕТОДЫ */
+                 /* const myCity = {
+                    city: "Tashkent",
+                    country: true,
+                    number: function (){
+                        globalThis.console.log("Hello My Friends")
+                    }
+                 }
+                 myCity.number() */
+             /* ----------------------------- */
+
+                    /* МУТАЦИЯ */
+                /* const myName = {
+                    city: "Tashkent",
+                    age: 17
+                }
+                myName.age = 19
+                myName.city = "Uzbekistan"
+
+                window.console.log(myName.city)
+                window.console.log(myName.age) */
+
+
+
+/* function showMass(name, surname){
+    alert("Привет" + name + surname)
+}
+  
+
+                showMass("Vladimir", "Putin") */
+                /*   function random1(a, b){
+                   let rand = a + Math.random() * (b + 1 - a);
+                   return Math.floor(rand)
+            }
+                     console.log(random1(0, 100))  */
+
+                 
+
+                    /*  let a = prompt("Daraxtda nechta maymun Bor?")
+                     
+                     let res;
+
+                     if(a % 10 >= 1 && a % 10 <= 4){
+                        res = ("Daraxtda" + a + "cha" + "maymun" + "Bor")
+                     }
+                     else if (a % 10 >= 6 && a % 10 <= 10){
+                        res = ("Daraxtda" + a + "maymunlar" + "bor" )
+                     }
+                     else if(a % 10 == 0){
+                        res = ("Darqxtda" + "Maymun Bor")
+                     }
+                     else{
+                        res = "Unaqasi yo`q"
+                     }
+
+                     alert(res) */
+
+                     /* let a = prompt("Soz Yoz!")
+                     let whil = +prompt("Son Yoz!")
+                     let res;
+
+
+                     for(b = 0; b <= whil; b++){
+                       document.write(a + "<hr>" + "<br>")
+                     }
+                                */    
+                                
+
+             /* let a = []
+             let word = ""
+             let num = +prompt("Son Kiriting!")
+
+             for(let i = 1; i <= num; i++){
+                word += "x"
+                a.push( word)
+             }
+                 window.console.log(a) */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script> 
+  
+
+       
+      
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+<!--  1. /* alert("Salom Dunyo") */
+
+2. /*  var name = "Hello"
+ document.write(name) BODY */
+
+3. /* var name = "Hello"
+ console.log(name); CONSOLE*/
+
+
+ var name = "Hello"   /* Malumot Turi: "String" */
+ var num = 2   /* Malumot Turi: "Number" */
+ var unde = undefined   /* Malumot Turi: "Topolmayapti, XATO" */
+ var obj = {}   /* Malumot Turi: "Object" */
+ var bool  = true / false   /* Malumot Turi: "Yolg`on / Rost" */
+ var nul = null   /* Malomot Turi: "NULL" */  -->
+
+ <!-- var num = prompt("Login")
+var res;
+  
+if(num == 123){
+    res = "Togri topdingiz"
+}
+else if(num > 1234){
+    res = "To`gri login emas"
+}
+else if(num < 1234){
+    res = "To`gri login emas"
+}
+else{
+    res = "Yoqol"
+}
+
+alert(res);
+
+var num1 = prompt("Parol")
+var res;
+
+if(num1 == 123){
+    res = "Parolni To`g`ri Kiritdingiz, Tabriklaymiz MALIBU bilan!!!!"
+}
+else if(num1 > 1234){
+    res = "To`gri Parol emas"
+}
+else if(num1 < 1234){
+    res = "To`gri Parol emas"
+}
+
+alert(res); -->
+
+
+<!-- /* var mir = +prompt("Son Kiriting")
+var mir1 = ""
+var mir2 = 0
+
+while(mir2 < mir){
+    mir1 = mir1 + "*"
+    document.write(mir1 + "<br>") --> 
+      
+
+    

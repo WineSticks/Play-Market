@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border: 1px groove black;
+    background: url(https://i.pinimg.com/originals/80/5d/94/805d94108c85b14ab550fb02092f04b0.gif) center center no-repeat /  ;
+    height: 960px;
+}
